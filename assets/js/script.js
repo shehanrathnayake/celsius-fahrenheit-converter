@@ -9,7 +9,7 @@ const celElement = temperature.querySelector(".celInput")
 const equal = temperature.querySelector(".equal")
 const fahrenElement = temperature.querySelector(".fahrenInput")
 
-//Listening to farenheitToCelcius button
+//Listening to fahrenheitToCelsius button
 fahrenToCel.addEventListener("click", ()=>{
 
     //changing the .show and .remove classes
@@ -32,7 +32,7 @@ fahrenToCel.addEventListener("click", ()=>{
 
 })
 
-//Listening to celToFarenheit button
+//Listening to celToFahrenheit button
 celToFahren.addEventListener("click", ()=>{
 
     //changing the .show and .remove classes
@@ -54,10 +54,10 @@ celToFahren.addEventListener("click", ()=>{
     celsius.readOnly = false
 })
 
-//Listening to celcius value input
+//Listening to celsius value input
 celsius.addEventListener("change", ()=>{
 
-    //setting equations and values to farenheit input
+    //setting equations and values to fahrenheit input
     let value = (celsius.value * 9 / 5) + 32
     if (Math.floor(value) === value) {
         fahrenheit.value = value
@@ -66,10 +66,10 @@ celsius.addEventListener("change", ()=>{
     }
 })
 
-//Listening to farenheit value input
+//Listening to fahrenheit value input
 fahrenheit.addEventListener("change", ()=>{
 
-    //setting equations and values to celcius input
+    //setting equations and values to celsius input
     let value = (fahrenheit.value - 32) * 5 / 9
     if (Math.floor(value) === value) {
         celsius.value = value
