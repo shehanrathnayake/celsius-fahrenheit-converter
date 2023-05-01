@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Temperature</title>
+</head>
+<body>
+    <div class="display">
+        <h2>Celcius Farenheit Converter</h2>
+        <div class="temperature">
+            <div class="celInput">
+                <input type="number" class="celcius" name="celcius" placeholder="0">
+                <label for="celcius">C</label>
+            </div>
+            <span class="equal">=</span>
+            <div class="farenInput">
+                <input type="text" class="farenheit" name="farenheit" placeholder="32" readonly>
+                <label for="farenheit">F</label>
+            </div>
+        </div>
+        <br>
+        <button id="farenToCel" class="show">Farenheit to Celcius</button>
+        <button id="celToFaren" class="hide">Celcius to Farenheit</button>  
+    </div>
+    
+    <script src="https://kit.fontawesome.com/569015700f.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
