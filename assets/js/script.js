@@ -1,4 +1,4 @@
-const celcius = document.querySelector(".celcius")
+const celsius = document.querySelector(".celcius")
 const farenheit = document.querySelector(".farenheit")
 const farenToCel = document.querySelector("#farenToCel")
 const celToFaren = document.querySelector("#celToFaren")
@@ -24,10 +24,10 @@ farenToCel.addEventListener("click", ()=>{
 
     //setting placeholders
     farenheit.placeholder = 0
-    celcius.placeholder = -17.78
+    celsius.placeholder = -17.78
 
     //changing edit access
-    celcius.readOnly = true
+    celsius.readOnly = true
     farenheit.readOnly = false
 
 })
@@ -46,16 +46,16 @@ celToFaren.addEventListener("click", ()=>{
     temperature.insertBefore(equal, farenElement)
 
     //setting placeholders
-    celcius.placeholder = 0
+    celsius.placeholder = 0
     farenheit.placeholder = 32
 
     //changing edit access
     farenheit.readOnly = true
-    celcius.readOnly = false
+    celsius.readOnly = false
 })
 
 //Listening to celcius value input
-celcius.addEventListener("change", ()=>{
+celsius.addEventListener("change", ()=>{
 
     //setting equations and values to farenheit input
     let value = (celcius.value * 9 / 5) + 32
@@ -72,8 +72,8 @@ farenheit.addEventListener("change", ()=>{
     //setting equations and values to celcius input
     let value = (farenheit.value - 32) * 5 / 9
     if (Math.floor(value) === value) {
-        celcius.value = value
+        celsius.value = value
     } else {
-        celcius.value = parseFloat(value.toFixed(2))
+        celsius.value = parseFloat(value.toFixed(2))
     }
 })
